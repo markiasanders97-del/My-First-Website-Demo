@@ -67,14 +67,15 @@ li {
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
-    align-items: center
+    align-items: center;
     justify-content: center;
 }   
 
 #about,
-#discord ,
-#contact {
-    padding: 48px 0;
+#discord,
+#contact,
+footer {
+  padding: 48px 0;
 }
 
 /*
@@ -88,9 +89,9 @@ ABOUT
 }
 
 h2 {
-   font-size: 60px'
-   text-algin: center;
-   margim-bottom: 24px; 
+   font-size: 60px;
+   text-align: center;
+   margin-bottom: 24px; 
 }
 
 .section__description {
@@ -108,7 +109,7 @@ img {
 }
 
 .section__description--wrapper {
-    width: 60px;
+    width: 60%;
 }
 
 .about__img--wrapper,
@@ -119,7 +120,7 @@ img {
 .section__description--para {
     font-size: 20x;
     line-height: 1.5;
-    margin-right: 24px;
+    margin-bottom: 24px;
 }
 
 /*
@@ -147,11 +148,12 @@ form{
     max-width: 600px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 input, textarea {
     margin-bottom: 24px;
-    font-size: 18px;
+    font-size: 20px;
     padding: 6px 12px;
 }
 
@@ -181,3 +183,35 @@ footer {
     padding: 0 16px;
 }
  
+/* SMALL PHONES. TABLETS, LARGE SMARTPHONES */
+@media(max-width: 728px) {
+  .row {
+    flex-direction: column;
+  }  
+
+  .home__description {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__description--button {
+    max-width: 240px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.subheader {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+}
+
+
+
